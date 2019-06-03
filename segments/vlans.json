@@ -1,0 +1,18 @@
+[
+    {
+        "Name":  "Somevlan_50",
+        "VLANId":  50
+    },
+    {
+        "Name":  "Somevlan_222",
+        "VLANId":  222
+    },
+    {
+        "Name":  "Somevlan_300",
+        "VLANId":  300
+    },
+    {
+        "Name":  "Somevlan_333",
+        "VLANId":  333
+    }
+]
