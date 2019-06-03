@@ -4,7 +4,7 @@
 		$TransportZoneID = "";
 		$DisplayNamePrefix = "NSX_";
 		$NSXManagerHostName = "nsx-manager.local";
-    		$JSONSourcePath = "./vlans.json"; // Could be url, or simple
+    		$JSONSourcePath = "./vlans.json"; // Could be url, or simple file
     		$NSXManagerUserName = "";
     		$NSXManagerPassword = "";
 		
@@ -35,8 +35,8 @@
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");                                                                     
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);                                                                  
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);  
-			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // If you have valid certificate, then yes
-			curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); // If you have valid certificate, then yes
+			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // If you have valid certificate, then true
+			curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false); // If you have valid certificate, then true
 			curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 			curl_setopt($ch, CURLOPT_USERPWD, "".$NSXManagerUserName.":".$NSXManagerPassword.""); 			
 			curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
