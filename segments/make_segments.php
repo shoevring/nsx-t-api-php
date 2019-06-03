@@ -4,9 +4,9 @@
 		$TransportZoneID = "";
 		$DisplayNamePrefix = "NSX_";
 		$NSXManagerHostName = "nsx-manager.local";
-    $JSONSourcePath = "./vlans.json"; // Could be url, or simple
-    $NSXManagerUserName = "";
-    $NSXManagerPassword = "";
+    		$JSONSourcePath = "./vlans.json"; // Could be url, or simple
+    		$NSXManagerUserName = "";
+    		$NSXManagerPassword = "";
 		
 	# Get Data
 		$jsondata = json_decode(file_get_contents($JSONSourcePath), true);
